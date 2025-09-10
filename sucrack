@@ -72,8 +72,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     if not args.user:
-        get_help()
-        sys.exit(0)
+        sys.exit(1)
 
     su_brute_user_num(args.user, args.dictionary, args.timeout, args.sleep)
     print("\n[!] Password not found: dictionary exhausted.")
