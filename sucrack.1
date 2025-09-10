@@ -1,0 +1,55 @@
+.TH SUCRACK 1 "September 2025" "sucrack" "User Commands"
+
+.SH NAME
+sucrack \- crack a su password
+
+.SH SYNOPSIS
+.B passgen
+.RI [ options ]
+
+.SH DESCRIPTION
+\fBsucrack\fR is a command-line utility that cracks provided user's password based on user-defined dictionary.
+
+.SH OPTIONS
+.TP
+.B \-u, \--user
+Specify the target user to bruteforce.
+
+.TP
+.B \-d, \--dictionary
+Specify password dictionary.
+
+.TP
+.B \-t, \--timeout
+Timeout for `su` process.
+
+.TP
+.B \-s, \--sleep
+Sleep time.
+
+.SH EXAMPLES
+.TP
+.B sucrack -u <USERNAME> -d passwords.txt -t 0.3 -s 0.005
+
+.SH AUTHORS
+Currently maintained by Kinderfeld <https://github.com/Kinderfeld>
+
+.SH COPYRIGHT
+Copyright (C) 2025 Archetypum
+
+\fBsucrack\fR is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+\fBsucrack\fR is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with \fBsucrack\fR. If not, see <https://www.gnu.org/licenses/>.
+
+.SH REPORTING BUGS
+Project homepage: <https://github.com/Archetypum/sucrack>
+
