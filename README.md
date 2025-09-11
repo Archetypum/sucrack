@@ -26,6 +26,8 @@ man sucrack
 sucrack --help
 ```
 
+You can find password dictionaries at [_SecLists_](https://github.com/danielmiessler/SecLists).
+
 ## Legal
 
 `sucrack` is free software, released under the **GNU General Public License v3**.
